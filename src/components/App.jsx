@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 import "./style.css";
 import {
   RiLinkedinFill,
@@ -9,9 +11,23 @@ import {
 } from "react-icons/ri";
 import myImage from "../assets/Raju_pass.jpg";
 
+
 function App() {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const scrollInstance = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+    });
+    return () => {
+      scrollInstance.destroy();
+    };
+  }, []);
+
   return (
-    <div id="main">
+    <div ref={scrollRef} data-scroll-container>
+     <div id="main">
       <div id="page1">
         <div id="nav">
           <h4>Hello</h4>
@@ -61,6 +77,7 @@ function App() {
           <RiGithubFill />
         </footer>
       </div>
+    </div>
     </div>
   );
 }
