@@ -1,0 +1,146 @@
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: #030303;
+    padding: 25vh 10vw;
+  }
+  
+  .line {
+    /* background-color: red; */
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 3vw;
+  }
+  
+  #line1-part1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 1vw;
+  }
+  
+  #line1-part1 h5,
+  #line1-part1 h6 {
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+  }
+  
+  #line1-part1 h5 {
+    /* background-color: red; */
+    width: 5vw;
+    text-align: right;
+  }
+  
+  .line h1 {
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .line h2 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    /* animation-name: loaderAnim */
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes loaderAnime {
+    0% {
+      font-family: "plain light";
+      -webkit-text-stroke: 1px #fff;
+      color: #fff;
+      font-weight: 500;
+      opacity: 1;
+    }
+  
+    48% {
+      font-family: "plain light";
+      -webkit-text-stroke: 1px #fff;
+      color: #fff;
+      font-weight: 500;
+      opacity: 0;
+    }
+  
+    50% {
+      font-family: "silk serif";
+      -webkit-text-stroke: 1px #fff;
+      font-weight: 500;
+      color: transparent;
+      opacity: 1;
+    }
+  
+    100% {
+      font-family: "silk serif";
+      -webkit-text-stroke: 1px #fff;
+      font-weight: 500;
+      color: transparent;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes loaderAnime {
+    0% {
+      font-family: "plain light";
+      -webkit-text-stroke: 1px #fff;
+      color: #fff;
+      font-weight: 500;
+      opacity: 1;
+    }
+  
+    48% {
+      font-family: "plain light";
+      -webkit-text-stroke: 1px #fff;
+      color: #fff;
+      font-weight: 500;
+      opacity: 0;
+    }
+  
+    50% {
+      font-family: "silk serif";
+      -webkit-text-stroke: 1px #fff;
+      font-weight: 500;
+      color: transparent;
+      opacity: 1;
+    }
+  
+    100% {
+      font-family: "silk serif";
+      -webkit-text-stroke: 1px #fff;
+      font-weight: 500;
+      color: transparent;
+      opacity: 0;
+    }
+  }
+  
+  #main {
+    position: relative;
+    background-color: #151515;
+    z-index: 99;
+  }
+
+  
