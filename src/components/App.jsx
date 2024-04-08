@@ -11,8 +11,8 @@ import {
 } from "react-icons/ri";
 import myImage from "../assets/Raju_pass.jpg";
 
-
 function App() {
+
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -81,5 +81,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

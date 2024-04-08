@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+
+
+#some extra files
+mouseFollower.jsx*
+
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
