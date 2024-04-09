@@ -1,8 +1,8 @@
-# React + Vite
+# About this Project
+This Portfolio website project uses React, CSS, Locomotive for smooth scrolling effects and GSAP(for animation).
+you can clone this website by downloading a zip file directly by link.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# How to Run this Project
+ To run this project do npm install for node modules and with that also install locomotive, GSAP.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Live Link:- https://raju-kumar-portfolio.vercel.app/
