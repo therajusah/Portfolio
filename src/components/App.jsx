@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import "./style.css";
@@ -68,30 +68,41 @@ function App() {
             <div className="project-card"></div>
           </div>
           <div className="footer-container">
-  <div className="foot-msg">
-    <h2>Let's Connect</h2>
-  </div>
-  <footer id="footer">
-    <div className="footer-links">
-      <a href="https://www.linkedin.com/in/therajusah" className="footer-link">
-        <RiLinkedinFill />
-      </a>
-      <a href="https://twitter.com/therajusah" className="footer-link">
-        <RiTwitterFill />
-      </a>
-      <a href="https://www.facebook.com/therajusah" className="footer-link">
-        <RiFacebookFill />
-      </a>
-      <a href="https://www.instagram.com/therajusah" className="footer-link">
-        <RiInstagramFill />
-      </a>
-      <a href="https://github.com/therajusah" className="footer-link">
-        <RiGithubFill />
-      </a>
-    </div>
-  </footer>
-</div>
-
+            <div className="foot-msg">
+              <h2>Let's Connect</h2>
+            </div>
+            <footer id="footer">
+              <div className="footer-links">
+                <a
+                  href="https://www.linkedin.com/in/therajusah"
+                  className="footer-link"
+                >
+                  <RiLinkedinFill />
+                </a>
+                <a
+                  href="https://twitter.com/therajusah"
+                  className="footer-link"
+                >
+                  <RiTwitterFill />
+                </a>
+                <a
+                  href="https://www.facebook.com/therajusah"
+                  className="footer-link"
+                >
+                  <RiFacebookFill />
+                </a>
+                <a
+                  href="https://www.instagram.com/therajusah"
+                  className="footer-link"
+                >
+                  <RiInstagramFill />
+                </a>
+                <a href="https://github.com/therajusah" className="footer-link">
+                  <RiGithubFill />
+                </a>
+              </div>
+            </footer>
+          </div>
         </div>
       </div>
     </div>

@@ -123,7 +123,6 @@ body {
   margin: 20px 30px;
 }
 
-
 .footer-container {
   padding-top: 6%;
   display: flex;
@@ -160,4 +159,11 @@ body {
 
 .footer-link:hover {
   color: #007bff; 
+}
+
+
+.project-card img {
+  height: fit-content;
+  width: fit-content;
+  
 }
