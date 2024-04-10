@@ -78,6 +78,7 @@ function App() {
             <div className="project-card"></div>
             <div className="project-card"></div>
             <div className="project-card"></div>
+            <div className="project-card"></div>            
           </div>
           <div className="footer-container">
             <div className="foot-msg">
