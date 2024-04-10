@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import "./style.css";
@@ -13,6 +14,7 @@ import myImage from "../assets/Raju_pass.jpg";
 
 function App() {
   const scrollRef = useRef(null);
+  const textDivRef = useRef(null);
 
   useEffect(() => {
     const scrollInstance = new LocomotiveScroll({
@@ -22,6 +24,16 @@ function App() {
     return () => {
       scrollInstance.destroy();
     };
+  }, []);
+
+  useEffect(() => {
+    gsap.from(textDivRef.current.children, {
+      y: "100%",
+      opacity: 0,
+      duration: 2,
+      stagger: 0.25,
+      ease: "power3.out",
+    });
   }, []);
 
   return (
@@ -39,7 +51,7 @@ function App() {
             <div id="img-div">
               <img src={myImage} alt="" />
             </div>
-            <div id="text-div">
+            <div id="text-div" ref={textDivRef}>
               <h3>Hey,</h3>
               <h3>I am Raju Kumar</h3>
               <p>A Frontend developer</p>
