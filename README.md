@@ -5,4 +5,12 @@ you can clone this website by downloading a zip file directly by link.
 # How to Run this Project
  To run this project do npm install for node modules and with that also install locomotive, GSAP.
 
+ ``` npm install ```
+
+ ``` npm install locomotive ```
+
+``` npm install gsap ```
+
 # Live Link:- https://raju-kumar-portfolio.vercel.app/
+
+
