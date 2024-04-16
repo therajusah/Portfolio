@@ -64,11 +64,10 @@ function App() {
           <div id="page2-main">
             <div id="skills">About me</div>
             <h4>
-              Welcome to my world. HTML, CSS, and JavaScript lay the foundation,
-              while React, Redux, and GSAP bring it to life. Tailwind CSS adds
-              style, NodeJS powers the backend, MongoDB stores the data, and Git
-              ensures a seamless journey. Let's craft something extraordinary
-              together.
+             Hey, everyone I use HTML, CSS, and JavaScript form the base. React, Redux, and GSAP
+              animate. Tailwind CSS styles. NodeJS powers the backend. MongoDB
+              stores data. Git ensures smooth collaboration. Let's craft
+              something remarkable together.
             </h4>
           </div>
           <div id="arrow"></div>
@@ -78,7 +77,7 @@ function App() {
             <div className="project-card"></div>
             <div className="project-card"></div>
             <div className="project-card"></div>
-            <div className="project-card"></div>            
+            <div className="project-card"></div>
           </div>
           <div className="footer-container">
             <div className="foot-msg">
