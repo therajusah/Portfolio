@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.icon.html { color: #e34c26; } /* HTML */
+.icon.css { color: #264de4; } /* CSS */
+.icon.javascript { color: #f7df1e; } /* JavaScript */
+.icon.react { color: #61dafb; } /* React */
+.icon.typescript { color: #3178c6; } /* TypeScript */
+.icon.tailwind { color: #38b2ac; } /* Tailwind CSS */
+.icon.mongodb { color: #4db33d; } /* MongoDB */
+.icon.git { color: #f05032; } /* Git */

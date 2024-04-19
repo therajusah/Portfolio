@@ -4,7 +4,6 @@ import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import myImage from "../assets/Raju_pass.jpg";
 
-
 import {
   RiLinkedinFill,
   RiTwitterFill,
@@ -12,6 +11,8 @@ import {
   RiInstagramFill,
   RiGithubFill,
 } from "react-icons/ri";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript, SiTailwindcss, SiMongodb, SiGit } from 'react-icons/si';
+
 
 function App() {
   const scrollRef = useRef(null);
@@ -33,7 +34,6 @@ function App() {
       opacity: 0,
       duration: 2,
       stagger: 0.25,
-      ease: "power3.out",
     });
   }, []);
 
@@ -69,15 +69,42 @@ function App() {
           <div className="text-center">
             <div className="text-white text-4xl font-medium mb-8">About me</div>
             <p className="text-white text-xl">
-              Hey, everyone I use HTML, CSS, and JavaScript form the base. React, Redux, and GSAP
-              animate. Tailwind CSS styles. NodeJS powers the backend. MongoDB
-              stores data. Git ensures smooth collaboration. Let&apos;s craft
-              something remarkable together.
+            <>
+  <h4 className="text-white text-2xl font-medium mb-5">HTML, CSS, and JavaScript</h4>
+
+  <h4 className="text-white text-2xl font-medium mb-5">React, Redux, and GSAP</h4>
+
+  <h4 className="text-white text-2xl font-medium mb-5">Tailwind CSS styles,</h4>
+
+  <h4 className="text-white text-2xl font-medium mb-5">NodeJS,</h4>
+
+  <h4 className="text-white text-2xl font-medium mb-5">MongoDB,</h4>
+
+  <h4 className="text-white text-2xl font-medium mb-5">Git,</h4>
+
+  <h4 className="text-white text-2xl font-medium mb-5">Let's craft something remarkable together.</h4>
+</>
+
             </p>
           </div>
         </div>
       </div>
-      <div className="bg-black">
+      <div className="page-3 h-[90vh] w-[100%] bg-black flex flex-col justify-center items-center">
+  <h2 className="text-white text-4xl font-bold mb-8">Languages & Frameworks</h2>
+  <div className="flex justify-center items-center">
+    <SiHtml5 className="icon html text-6xl mr-8" />
+    <SiCss3 className="icon css text-6xl mr-8" />
+    <SiJavascript className="icon javascript text-6xl mr-8" />
+    <SiReact className="icon react text-6xl mr-8" />
+    <SiTypescript className="icon typescript text-6xl mr-8" />
+    <SiTailwindcss className="icon tailwind text-6xl mr-8" />
+    <SiMongodb className="icon mongodb text-6xl mr-8" />
+    <SiGit className="icon git text-6xl mr-8" />
+  </div>
+</div>
+
+
+        <div className="bg-black">
         <div className="container mx-auto py-24">
           <div className="flex justify-between">
             <div className="w-1/4 h-96 bg-blue-500 rounded-lg mx-4"></div>
@@ -100,6 +127,7 @@ function App() {
         </div>
       </div>
     </div>
+
   );
 }
 
