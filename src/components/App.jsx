@@ -190,6 +190,7 @@ function App() {
             <SiTailwindcss className="icon tailwind text-6xl mr-8" />
             <SiMongodb className="icon mongodb text-6xl mr-8" />
             <SiGit className="icon git text-6xl mr-8" />
+
           </div>
         </div>
 
