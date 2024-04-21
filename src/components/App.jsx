@@ -53,7 +53,7 @@ function MouseFollower() {
       className="absolute top-0 left-0 pointer-events-none"
       style={{ zIndex: 9999 }}
     >
-      <div className="w-6 h-6 bg-red-500 rounded-full"></div>
+      <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
     </div>
   );
 }
