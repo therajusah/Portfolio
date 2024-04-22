@@ -1,8 +1,9 @@
-import  { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import myImage from "../assets/Raju_pass.jpg";
+import MouseFollower from "./MouseFollower";
 
 import {
   RiLinkedinFill,
@@ -21,42 +22,6 @@ import {
   SiMongodb,
   SiGit,
 } from "react-icons/si";
-
-function MouseFollower() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const followerRef = useRef(null);
-
-  useEffect(() => {
-    const onMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener("mousemove", onMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", onMouseMove);
-    };
-  }, []);
-
-  useEffect(() => {
-    gsap.to(followerRef.current, {
-      x: mousePosition.x,
-      y: mousePosition.y,
-      ease: "power4.out",
-      duration: 0.5,
-    });
-  }, [mousePosition]);
-
-  return (
-    <div
-      ref={followerRef}
-      className="absolute top-0 left-0 pointer-events-none"
-      style={{ zIndex: 9999 }}
-    >
-      <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
-    </div>
-  );
-}
 
 function App() {
   const scrollRef = useRef(null);
@@ -80,7 +45,6 @@ function App() {
       stagger: 0.25,
     });
   }, []);
-
   return (
     <div>
       <style>
@@ -197,10 +161,10 @@ function App() {
         <div className="bg-black">
           <div className="container py-24 mx-auto">
             <div className="flex justify-between">
-              <div className="w-1/4 mx-4 bg-blue-500 rounded-lg h-96"></div>
-              <div className="w-1/4 mx-4 bg-blue-500 rounded-lg h-96"></div>
-              <div className="w-1/4 mx-4 bg-blue-500 rounded-lg h-96"></div>
-              <div className="w-1/4 mx-4 bg-blue-500 rounded-lg h-96"></div>
+              <div className="w-1/4 mx-4 bg-gray-500 rounded-lg h-96"></div>
+              <div className="w-1/4 mx-4 bg-gray-500 rounded-lg h-96"></div>
+              <div className="w-1/4 mx-4 bg-gray-500 rounded-lg h-96"></div>
+              <div className="w-1/4 mx-4 bg-gray-500 rounded-lg h-96"></div>
             </div>
             <div className="flex justify-center mt-16">
               <div className="text-4xl font-medium text-white">
