@@ -57,12 +57,12 @@ function App() {
       <MouseFollower />
       <div ref={scrollRef} data-scroll-container>
         <div className="min-h-screen bg-black">
-          <div className="container px-4 mx-auto md:px-10">
+          <div className="container px-6 mx-auto md:px-10">
             <div className="flex items-center justify-between py-8">
-              <h4 className="text-2xl text-white md:text-3xl">Hello</h4>
-              <div className="flex gap-6">
-                <h4 className="text-2xl text-white md:text-3xl">Project</h4>
-                <h4 className="text-2xl text-white md:text-3xl">Contact</h4>
+              <h4 className="text-2xl text-white md:text-1xl">Hello</h4>
+              <div className="flex gap-10">
+                <h4 className="text-2xl text-white md:text-1xl">Project</h4>
+                <h4 className="text-2xl text-white md:text-1xl">Contact</h4>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ function App() {
                 <h3 className="text-3xl text-white md:text-5xl">
                   I am Raju Kumar
                 </h3>
-                <p className="text-xl text-white md:text-2xl">
+                <p className="text-2xl text-white md:text-2xl">
                   A Frontend developer
                 </p>
                 <a
@@ -402,7 +402,7 @@ function App() {
             </div>
             <div className="flex justify-center mt-16">
               <div className="text-4xl font-medium text-white">
-                Let's Connect
+                Let&apos;s Connect
               </div>
             </div>
             <div className="flex justify-center mt-4">
