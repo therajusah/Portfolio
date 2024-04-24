@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import myImage from "../assets/Raju_pass.jpg";
-import MouseFollower from "./MouseFollower";
+// import MouseFollower from "./MouseFollower.jsx";
 
 import {
   RiLinkedinFill,
@@ -54,7 +54,7 @@ function App() {
           }
         `}
       </style>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <div ref={scrollRef} data-scroll-container>
         <div className="min-h-screen bg-black">
           <div className="container px-6 mx-auto md:px-10">
