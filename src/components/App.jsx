@@ -5,6 +5,7 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 import myImage from "../assets/Raju_pass.jpg";
 import ecomImg from "../assets/ecom-i.png";
 import MouseFollower from "./MouseFollower.jsx";
+import wheatherApp from'../assets/wheatherapp.png';
 
 import {
   RiLinkedinFill,
@@ -163,7 +164,7 @@ function App() {
             <div className="flex justify-between">
               {/* 1st card */}
               {/* todo w-1/4 mx-4  h-96  */}
-              <div className="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  ">
+              <div className="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
                 <a href="https://ecom-fakestore.vercel.app/" target="_blank">
                   <img className="rounded-t-lg" src={ecomImg} alt="" />
                 </a>
@@ -178,7 +179,7 @@ function App() {
                   </p>
                   <a
                     href="#"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className="inline-flex items-center px-3 py-2 mt-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Live Link
                     <svg
@@ -222,19 +223,18 @@ function App() {
               </div>
 
               {/* 2nd card */}
-              <div className="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  ">
+              <div className="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
                 <a href="#">
-                  <img className="rounded-t-lg" src={myImage} alt="" />
+                  <img className="rounded-t-lg" src={wheatherApp} alt="" />
                 </a>
                 <div className="p-5">
                   <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      Noteworthy technology acquisitions 2021
+                      Wheather App
                     </h5>
                   </a>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                    This is a wheather app built on React, CSS and Wheather API in the backend to get the data.
                   </p>
                   <a
                     href="#"
@@ -281,7 +281,7 @@ function App() {
                 </div>
               </div>
               {/* 3rd card*/}
-              <div className="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  ">
+              <div className="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
                 <a href="#">
                   <img className="rounded-t-lg" src={myImage} alt="" />
                 </a>
@@ -340,7 +340,7 @@ function App() {
                 </div>
               </div>
               {/* 4th Card */}
-              <div className="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  ">
+              <div className="max-w-sm m-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
                 <a href="#">
                   <img className="rounded-t-lg" src={myImage} alt="" />
                 </a>

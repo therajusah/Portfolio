@@ -8,8 +8,13 @@ import {
   SiMongodb,
   SiGit,
   SiNodeDotJs,
-  SiSass,     
-  SiWebpack,   
+  SiSass,
+  SiWebpack,
+  SiRedux,
+  SiGraphQL, 
+  SiFirebase, 
+  SiNextDotJs, 
+  SiStyledComponents, 
 } from "react-icons/si";
 
 function TechIcons() {
@@ -24,8 +29,13 @@ function TechIcons() {
       <SiMongodb className="mr-8 text-6xl icon mongodb" />
       <SiGit className="mr-8 text-6xl icon git" />
       <SiNodeDotJs className="mr-8 text-6xl icon nodejs" />
-      <SiSass className="mr-8 text-6xl icon sass" />            
-      <SiWebpack className="mr-8 text-6xl icon webpack" />     
+      <SiSass className="mr-8 text-6xl icon sass" />
+      <SiWebpack className="mr-8 text-6xl icon webpack" />
+      <SiRedux className="mr-8 text-6xl icon redux" /> 
+      <SiGraphQL className="mr-8 text-6xl icon graphql" />
+      <SiFirebase className="mr-8 text-6xl icon firebase" />
+      <SiNextDotJs className="mr-8 text-6xl icon nextjs" /> 
+      <SiStyledComponents className="mr-8 text-6xl icon styled-components" />
     </div>
   );
 }
