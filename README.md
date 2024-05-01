@@ -3,12 +3,25 @@ This Portfolio website project uses React, CSS, Locomotive for smooth scrolling 
 you can clone this website by downloading a zip file directly by link.
 
 # How to Run this Project
- To run this project do npm install for node modules and with that also install locomotive, GSAP.
+ To run this project do npm install for node modules and install locomotive, GSAP.
  
+1. Clone the Project
 
- ``` npm install ```
- 
+```
+    git clone https://github.com/therajusah/LMS-Platform.git
+```
 
-# Live Link:- https://raju-kumar-portfolio.vercel.app/
+2. Install dependencies
+```
+   npm install
+```
+
+3. Run the server
+```
+   npm run dev
+```
+
+
+
 
 
