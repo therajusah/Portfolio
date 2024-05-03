@@ -50,13 +50,13 @@ function App() {
   return (
     <div>
       <style>
-        {`
+        {/* {`
           body {
             cursor: none;
           }
-        `}
+        `} */}
       </style>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <div ref={scrollRef} data-scroll-container>
         <div className="min-h-screen bg-black">
           <div className="container px-6 mx-auto md:px-10">
