@@ -4,7 +4,6 @@ import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import myImage from "../assets/Raju_pass.jpg";
 import ecomImg from "../assets/ecom-i.png";
-import MouseFollower from "./MouseFollower.jsx";
 import wheatherApp from'../assets/wheatherapp.png';
 
 import {
@@ -49,14 +48,6 @@ function App() {
   }, []);
   return (
     <div>
-      <style>
-        {/* {`
-          body {
-            cursor: none;
-          }
-        `} */}
-      </style>
-      {/* <MouseFollower /> */}
       <div ref={scrollRef} data-scroll-container>
         <div className="min-h-screen bg-black">
           <div className="container px-6 mx-auto md:px-10">
