@@ -59,7 +59,7 @@ const Navbar = () => {
             ))}
             <motion.li variants={fadeIn(0.5)}>
               <a 
-                href="/resume.pdf" 
+                href="https://shorturl.at/2EmfQ" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="button"
