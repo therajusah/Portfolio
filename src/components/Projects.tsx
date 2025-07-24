@@ -5,6 +5,12 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+  title: "ALCRM",
+    description: "A career platform offering job listings, resume reviews, mentorship, and interview preparation tools. My role included building this product from scratch, building scalable features, and integrating expert-led services. The result was a robust, user-focused platform that empowers thousands of professionals in their career journey. It includes two dashboards: an Admin and a User.",
+    tech: ["Next.js", "TailwindCSS", "Node.js", "Supabase", "Express.js", "PostgreSQL"],
+    live: "https://www.alcrm.in/",
+  },
+  {
     title: "TechNest",
     description: "A hackathon participation website with an admin panel dashboard to download participants in an Excel file and manage the website.",
     tech: ["Next.js", "React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
