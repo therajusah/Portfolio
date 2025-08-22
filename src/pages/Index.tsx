@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonails";
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
@@ -33,6 +34,9 @@ const Index = () => {
       <About />
       <Skills />
       <Projects />
+     <div className="mb-5 flex-grow">
+     <Testimonials />
+     </div>
       <Contact />
       <Footer />
     </div>
