@@ -63,16 +63,23 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for portfolio
+				// Custom colors for portfolio - Nucleo Research inspired
 				portfolio: {
-					dark: "#0a192f",
-					light: "#112240",
-					lightest: "#233554",
-					slate: "#8892b0",
-					"slate-light": "#a8b2d1",
-					"slate-lightest": "#ccd6f6",
-					white: "#e6f1ff",
-					accent: "#64ffda",
+					// Light mode - Pure white & black
+					white: "#ffffff",
+					black: "#000000",
+					gray: "#666666",
+					"gray-light": "#999999",
+					"gray-lighter": "#cccccc",
+					border: "#e5e5e5",
+					blue: "#0099ff",
+					"blue-dark": "#0077cc",
+					// Dark mode specific
+					"dark-bg": "#0a0a0a",
+					"dark-bg-secondary": "#1a1a1a",
+					"dark-text": "#ffffff",
+					"dark-text-secondary": "#999999",
+					"dark-border": "#333333",
 				},
 			},
 			borderRadius: {
@@ -108,18 +115,30 @@ export default {
 				slideRight: {
 					'0%': { transform: 'translateX(-100px)', opacity: '0' },
 					'100%': { transform: 'translateX(0)', opacity: '1' }
-				}
+				},
+				spotlight: {
+					"0%": {
+						opacity: '0',
+						transform: "translate(-72%, -62%) scale(0.5)",
+					},
+					"100%": {
+						opacity: '1',
+						transform: "translate(-50%,-40%) scale(1)",
+					},
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fadeIn 0.5s ease-out forwards',
 				'slide-up': 'slideUp 0.5s ease-out forwards',
-				'slide-right': 'slideRight 0.5s ease-out forwards'
+				'slide-right': 'slideRight 0.5s ease-out forwards',
+				spotlight: "spotlight 2s ease .75s 1 forwards",
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				mono: ['JetBrains Mono', 'monospace']
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				mono: ['DM Mono', 'JetBrains Mono', 'monospace'],
+				vietnam: ['Be Vietnam Pro', 'Inter', 'sans-serif']
 			}
 		}
 	},

@@ -10,7 +10,7 @@ export const fadeIn = (delay: number = 0) => ({
     transition: {
       delay,
       duration: 0.5,
-      ease: "easeInOut",
+      ease: [0.4, 0, 0.2, 1] as const,
     },
   },
 });
@@ -35,7 +35,7 @@ export const slideIn = (direction: "left" | "right" | "up" | "down", delay: numb
       transition: {
         delay,
         duration: 0.5,
-        ease: "easeInOut",
+        ease: [0.4, 0, 0.2, 1] as const,
       },
     },
   };
@@ -58,7 +58,7 @@ export const cardAnimation = {
     y: 0,
     transition: {
       duration: 0.4,
-      ease: "easeInOut",
+      ease: [0.4, 0, 0.2, 1] as const,
     },
   },
 };
@@ -76,7 +76,7 @@ export const textReveal = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: "easeOut",
+      ease: [0, 0, 0.2, 1] as const,
     },
   },
 };
@@ -99,8 +99,8 @@ export const floatAnimation = {
     transition: {
       duration: 3,
       repeat: Infinity,
-      repeatType: "reverse" as const, // Fixed: TypeScript needs specific literal type
-      ease: "easeInOut",
+      repeatType: "reverse" as const,
+      ease: [0.4, 0, 0.2, 1] as const,
     },
   },
 };
@@ -111,7 +111,7 @@ export const pulseAnimation = {
     transition: {
       duration: 2,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: [0.4, 0, 0.2, 1] as const,
     },
   },
 };
@@ -138,9 +138,9 @@ export const shimmerAnimation = {
     ],
     transition: {
       duration: 2,
-      ease: "easeInOut",
+      ease: [0.4, 0, 0.2, 1] as const,
       repeat: Infinity,
-      repeatType: "reverse" as const, // Fixed: TypeScript needs specific literal type
+      repeatType: "reverse" as const,
     },
   },
 };

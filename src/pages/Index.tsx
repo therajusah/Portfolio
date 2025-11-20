@@ -1,45 +1,54 @@
 
 import { useEffect } from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Testimonials from "@/components/Testimonails";
+import GitHubGraph from "@/components/GitHubGraph";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Testimonials from "@/components/Testimonails";
+import SmoothScroll from "@/components/SmoothScroll";
+import CursorEffect from "@/components/CursorEffect";
+import ThemeToggle from "@/components/ThemeToggle";
+import FloatingNav from "@/components/FloatingNav";
+import { Spotlight } from "@/components/ui/Spotlight";
+import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
 
 const Index = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
-
   useEffect(() => {
     document.title = "Raju Kumar | Full Stack Developer";
   }, []);
 
   return (
-    <div className="min-h-screen bg-portfolio-dark text-portfolio-slate overflow-x-hidden">
-      <motion.div 
-        className="fixed top-0 left-0 right-0 h-1 bg-portfolio-accent z-50 origin-left"
-        style={{ scaleX }}
-      />
-      
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-     <div className="mb-5 flex-grow">
-     <Testimonials />
-     </div>
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <SmoothScroll />
+      <div className="min-h-screen w-full bg-portfolio-white dark:bg-black dark:bg-grid-white/[0.03] bg-grid-black/[0.03] text-portfolio-black dark:text-portfolio-dark-text transition-colors duration-300 relative md:cursor-none overflow-hidden">
+        <div className="fixed inset-0 z-0">
+          <Spotlight
+            className="-top-40 left-0 md:left-60 md:-top-20"
+            fill="rgba(0, 153, 255, 0.5)"
+          />
+          <BackgroundBeams className="opacity-20" />
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        </div>
+
+        <CursorEffect />
+        <ThemeToggle />
+        <FloatingNav />
+
+        <div className="relative z-10">
+          <Hero />
+          <About />
+          <Projects />
+          <Experience />
+          <GitHubGraph />
+          <Testimonials />
+          <Contact />
+          <Footer />
+        </div>
+      </div>
+    </>
   );
 };
 

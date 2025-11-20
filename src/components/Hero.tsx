@@ -1,64 +1,65 @@
 
 import { motion } from "framer-motion";
-import { fadeIn, slideIn } from "@/lib/framer-animations";
-import { ArrowDownCircle } from "lucide-react";
+import { fadeIn } from "@/lib/framer-animations";
 
 const Hero = () => {
   return (
     <motion.section
       id="hero"
-      className="min-h-screen flex flex-col justify-center pt-20 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
+      className="min-h-screen flex flex-col items-center justify-center py-12 px-6 md:px-12 max-w-4xl mx-auto relative text-center"
       initial="hidden"
       animate="visible"
     >
-      <motion.span 
-        className="text-portfolio-accent font-mono mb-5 text-lg"
+      <motion.div
+        className="mb-8"
         variants={fadeIn(0.1)}
       >
-        Hi, my name is
-      </motion.span>
-      
-      <motion.h1 
-        className="text-4xl md:text-7xl font-bold text-portfolio-white mb-4"
-        variants={slideIn("left", 0.2)}
+        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-portfolio-border dark:border-portfolio-dark-border">
+          <img
+            src="/assets/raju.png"
+            alt="Raju Kumar"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </motion.div>
+      <motion.div
+        className="mb-6"
+        variants={fadeIn(0.2)}
       >
-        Raju Kumar.
-      </motion.h1>
-      
-      <motion.h2 
-        className="text-3xl md:text-6xl font-bold text-portfolio-slate-light mb-6"
-        variants={slideIn("left", 0.3)}
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-bold text-portfolio-black dark:text-portfolio-dark-text mb-4 leading-tight">
+          Raju Kumar
+        </h1>
+        <p className="text-base md:text-lg text-portfolio-gray dark:text-portfolio-dark-text-secondary leading-relaxed max-w-2xl mx-auto">
+          Freelance Full Stack Developer specializing in building exceptional digital experiences. 
+          I craft modern web applications that power innovative products and deliver seamless, 
+          user-centric solutions for businesses worldwide.
+        </p>
+      </motion.div>
+      <motion.div
+        className="text-sm md:text-base text-portfolio-gray dark:text-portfolio-dark-text-secondary"
+        variants={fadeIn(0.3)}
       >
-        I build things for the web.
-      </motion.h2>
-      
-      <motion.p 
-        className="max-w-xl text-lg mb-12 text-portfolio-slate-light"
+        <p>React | Next.js | Node.js | TypeScript | MongoDB | PostgreSQL | Express.js | Tailwind CSS | Git | REST API | Supabase | React Native | AI Integration</p>
+      </motion.div>
+      <motion.div
+        className="mt-8 flex flex-wrap items-center justify-center gap-4"
         variants={fadeIn(0.4)}
       >
-        I'm a Full Stack Developer specializing in building exceptional digital experiences. 
-        Currently, I'm focused on creating accessible, human-centered products with cutting-edge technologies.
-      </motion.p>
-      
-      <motion.div variants={fadeIn(0.5)}>
-        <a href="#projects" className="button">
-          Check out my work
+        <a
+          href="https://cal.com/therajusah/30-min-chat"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-portfolio-black dark:bg-portfolio-white text-portfolio-white dark:text-portfolio-black text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
+        >
+          Hire Me
         </a>
-      </motion.div>
-
-      <motion.div 
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden md:block"
-        variants={fadeIn(0.8)}
-        animate={{ 
-          y: [0, 10, 0], 
-          transition: { 
-            repeat: Infinity, 
-            duration: 1.5 
-          } 
-        }}
-      >
-        <a href="#about">
-          <ArrowDownCircle className="text-portfolio-accent w-10 h-10" />
+        <a
+          href="https://shorturl.at/KKtH3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 border-2 border-portfolio-black dark:border-portfolio-white text-portfolio-black dark:text-portfolio-white text-sm font-medium transition-all duration-300 hover:bg-portfolio-black hover:text-portfolio-white dark:hover:bg-portfolio-white dark:hover:text-portfolio-black hover:scale-105 cursor-pointer"
+        >
+          Resume
         </a>
       </motion.div>
     </motion.section>
